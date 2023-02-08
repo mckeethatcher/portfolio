@@ -1,0 +1,92 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(96, 121, 132);
+  }
+  
+  /* Styles for the header section */
+  header {
+    background-color: rgb(199, 176, 176);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Styles for the unordered list in the header */
+  header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styles for each list item in the header */
+  header li {
+    margin: 0 10px;
+  }
+  
+  /* Styles for the links in the header */
+  header a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Styles for the header title */
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Styles for the main section */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Styles for each section within the main section */
+  main section {
+    background-color: lightgray;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Styles for the footer */
+  footer {
+    background-color: lightgray;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Styles for each image */
+  img {
+    margin: 20px;
+  }
+  
+  /* Styles for the text within the fixed div */
+  div p {
+    margin: 0;
+    padding: 10px;
+    color: white;
+  }
+  
+  /* Styles for the close button within the fixed div */
+  div div {
+    background-color: gray;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+  section{
+    display:flex;
+
+    columns: ;
+  }
