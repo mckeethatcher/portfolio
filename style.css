@@ -1,118 +1,200 @@
-/* General styles for the body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color:rgb(96, 121, 132);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* Styles for the header section */
+header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
   }
-  
-  /* Styles for the header section */
-  header {
-    background-color: rgb(199, 176, 176);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  /* Styles for the unordered list in the header */
-  header ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Styles for each list item in the header */
-  header li {
-    margin: 0 10px;
-  }
-  
-  /* Styles for the links in the header */
-  header a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  /* Styles for the header title */
-  header h1 {
-    margin: 0;
-  }
-  
-  /* Styles for the main section */
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  /* Styles for each section within the main section */
-  main section {
-    background-color: lightgray;
-    width: 30%;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Styles for the footer */
-  footer {
-    background-color: lightgray;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Styles for each image */
-  img {
-    margin: 20px;
-  }
-  
-  /* Styles for the text within the fixed div */
-  div p {
-    margin: 0;
-    padding: 10px;
-    color: white;
-  }
-  
-  /* Styles for the close button within the fixed div */
-  div div {
-    background-color: gray;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    cursor: pointer;
-  }
-  section{
-    display:flex;
-    background-color: blueviolet;
+
+/* Styles for the unordered list in the header */
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+/* Styles for each list item in the header */
+header li {
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #bdd4c6;
+  box-shadow: 0 2px 4px rgb(255, 253, 253);
+  transition: all 0.3s ease-in-out;
+  background-image: url('leaves-green-dark-plant-11569844824xscd3pcf44.jpg');
+  background-repeat: no-repeat;
+  background-position:right;
+  opacity: .8;
+}
+
+/* Styles for the links in the header */
+header a {
+  text-decoration: none;
+  color: #fff3f3;
+  font-weight: bold;
+}
+li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Styles for the header title */
+header h1 {
+  margin: 0;
+}
+
+/* Styles for the main section */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Styles for each section within the main section */
+main section {
+  background-color: #7eb26b;
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styles for the footer */
+footer {
+  background-color: #7eb26b;
+  height: 100px;
+  background-image: url('leaves-green-dark-plant-11569844824xscd3pcf44.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+/* Styles for each image */
+img {
+  margin: 20px;
+}
+
+/* Styles for the text within the fixed div */
+div p {
+  margin: 0;
+  padding: 10px;
+  color: #120a0a;
+}
+
+/* Styles for the close button within the fixed div */
+div div {
+  background-color: #7eb26b;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+section{
+  display:flex;
+  background-color: #7eb26b;
+}
+
+.accordion {
 
    
-  }
-
-  /* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+    font-size: 5vw;
+  background-image: url('leaves-green-dark-plant-11569844824xscd3pcf44.jpg');
+  background-size: cover;
+  justify-content: center;
+  background-clip: text;
+  -webkit-background-clip:text ;
+  color: transparent;
+  padding: 10px;
+  font-style: none;
+  text-decoration: none;
+  
+  
   }
   
 
   .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #c0b2b2;
+    
   }
 
   .panel {
-    padding: 0 18px;
-    background-color: white;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
     display: none;
     overflow: hidden;
-  }
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 5px solid  rgba(112, 166, 122, 0.2);
+  background-size: cover;
+  
+    
+}
+ .welcome{
+  background-size: cover;
+  justify-content: center;
+  background-clip: text;
+  -webkit-background-clip:text ;
+  color: transparent;
+  border-color: 2px antiquewhite;
+  font-size: 50px;
+  
+  background-image: url('leaves_green_plant_122801_2560x1080.jpg');
+  animation: 
+    typing 1.5s steps(40, end),
+    blink-caret .25s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  
+}
+
+h2{
+  font-size: 12vw;
+  background-image: url('leaves-green-dark-plant-11569844824xscd3pcf44.jpg');
+  background-size: cover;
+  justify-content: center;
+  background-clip: text;
+  -webkit-background-clip:text ;
+  color: transparent;
+  border-color: 2px antiquewhite;
+}
+h1{
+  font-size: 5vw;
+  background-image: url('leaves-green-dark-plant-11569844824xscd3pcf44.jpg');
+  background-size: cover;
+  justify-content: center;
+  background-clip: text;
+  -webkit-background-clip:text ;
+  color: transparent;
+  border-color: 2px antiquewhite;
+}
+.panel p {
+  justify-content: center;
+  background-clip: text;
+  -webkit-background-clip:text ;
+  color: transparent;
+  border-color: 2px antiquewhite;
+  font-size: 35px;
+  background-image: url('leaves-green-dark-plant-11569844824xscd3pcf44.jpg');
+  background-repeat:no-repeat ;
+  background-size: cover;
+
+}
+
+
