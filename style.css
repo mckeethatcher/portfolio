@@ -21,20 +21,20 @@ header ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  padding: 0px;
 }
 
 /* Styles for each list item in the header */
 header li {
   padding: 25px;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: #bdd4c6;
   box-shadow: 0 2px 4px rgb(255, 253, 253);
   transition: all 0.3s ease-in-out;
   background-image: url('leaves-green-dark-plant-11569844824xscd3pcf44.jpg');
   background-repeat: no-repeat;
   background-position:right;
-  opacity: .8;
+  opacity: .9;
 }
 
 /* Styles for the links in the header */
@@ -119,6 +119,11 @@ section{
   
   
   }
+  .accordion:hover{
+    transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(3, 50, 32, 0.2);
+}
+  
   
 
   .active, .accordion:hover {
