@@ -1,184 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
-<header>
-    <ul>
-        <li><a href="web.html">Home</a></li>
-        <li><a href="https://drudgereport.com">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
-    <h1>McKee Thatcher</h1>
-  </header>
 <body>
-<div class="container">
-<div class="box"> <h2>Just some code to show you i can :)</h2>
-<div>
-<div class="box">
-<pre> 
-    const PromptSync = require('prompt-sync');
+  <header>
+    <ul>
+      <li><a href="web.html" class="nav-link">Home</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </header>
+  <div style="text-align: center;">
+    <h1>Projects</h1>
+    <ul>
+      <li>
+        <a href="https://stargazer-front420.onrender.com/" class="project-link">Stargazer</a>
+       
+		<p>The stargazer app is an all-in-one tool designed to provide users with a comprehensive data and feature set for an optimal stargazing experience. The app includes a weather tracker that keeps users informed about current and upcoming conditions in their area, ensuring that they have clear skies for their stargazing sessions. Additionally, the app provides real-time solar activity data, helping users identify the best times to view various celestial events. To help users navigate the night sky, the app includes interactive star charts that provide detailed information about stars, planets, and other celestial objects visible at any given time. The charts can be customized based on the user's location and time of day, making it easy to identify and track specific objects in the sky. Moreover, the app includes a social component, allowing users to share photos they've taken with their devices and post them to the app's community forum. Users can add location data to their photos, allowing other users to see where they were taken and discover new stargazing spots in their area. Overall, the star-gazing app is a must-have tool for anyone interested in astronomy or looking to enhance their stargazing experience, providing them with all the information and features they could possibly need in one convenient app.</p>
+	</li>
 
-const prompt = require('prompt-sync')();
-
-const username = prompt(`What is your name? `);
-console.log(`Your name is ${username}`);
-startGame();
-
-function startGame() {
-	//user puts in their name
-	console.log(`${username} `);
-	// calling the firstChoice promts to continue the game
-	nightOut();
-}
-
-
-function nightOut() {
-	console.log(`come on grab ${username}'s keys and let go hit the town`)
-	;
-	console.log(
-		`alright its time for drinks do you want a beer or some shots...=>`
-	);
-	let you_choose = prompt(`so whats it gonna be lad?? `);
-	// users first choice of the game
-	if (you_choose === `shots`) {
-		console.log(`ohh so you are really tring to forget them huh?? `);
-		nowWeDrinking();
-	} else if (you_choose === `beer`) {
-		console.log(`we are swamped at the bar today so you are left with two options Corona or Budlight`);
-		lightBeerDrinks();
-	
-		nightOut();
-	}
-}
-
-
-function lightBeerDrinks() {
-	console.log(
-		`Well ${username} do you want corona or budlight? `
-	);
-	let you_choose = prompt(`we dont have a ton left and there are some pretty angry people who want beers `);
-	if (you_choose === `corona`) {
-		console.log(
-			`well you are just in luck you get the last corona we have left  `);
-		beerDranks();
-	} else if (you_choose === `bludlight`) {
-		console.log(`you suck at picking drinks that dont taste like horse pee the game is over for you`)
-            lightBeerDrinks();
-	
-}
-}
-
-
-function nowWeDrinking() {
-	console.log(
-		`so  ${username} we dont have a ton of options so we just have vodka `
-	);
-	let you_choose = prompt(`how many shots are we wanting *type a number here =>`);
-	if (you_choose < 5 ) {
-		console.log(
-			` "she must not have been that much of a heart breaker but ok enjoy your shots bud " you enjoy your night and go home alone `
-		);
-		
-	} else if (you_choose > 5 ) {
-		console.log(
-			` goodness ${username} thats how you get a part started everyones gonna feel this`);
-		weArePlasterd();
-	} else {
-		console.log(`hey ${username} didn't you hear us`);
-		nowWeDrinking();
-	}
-}
-
-function weArePlasterd() {
-	console.log(
-		`"hey ${username} i heard you were just dumped and cheated on, and i was the one who stole your girl. "
-        ${username} and friends gather around this guy and his possy knowing that a fight is about to break out `)
-
-	let you_choose = prompt(` do you run and hide becauase you are scared or fight `);
-	if (you_choose === `run`) {
-		console.log(
-			` you are quickly found and snuffed from this mortal toil for your cowardice `
-		);
-		weArePlasterd();
-	} else if (you_choose === `fight`) {
-		console.log(
-			`it was as brilliant and brutal fight but in the end they had the upper hand and you died a hero`
-		);
-		weArePlasterd();
-	} else {
-		console.log(` ${username} well what is it`);
-		weArePlasterd();
-	}
-}
-
-
-function beerDranks() {
-	console.log(
-		`"hey !!! ${username} you took the last good beer we have left wanna give it to me or drink it and find out what happens"   `
-	);
-	let you_choose = prompt(`does ${username} "give it to him" or "find out what happens"   `);
-	if (you_choose === `give it to him` ) {
-		console.log(
-			` that was the correct decision ${username}  `
-		);
-		goodChoice();
-	} else if (you_choose === `find out what happens` ) {
-		console.log(
-			` "thats mighty gutsy ${username} ,  and i respect that, but i still have to kill you "   `);
-		beerDranks();
-	} else {
-		console.log(`hey ${username} didn't you hear us  `   );
-		beerDranks();
-	}
-}
-
-function goodChoice() {
-	console.log(
-		` "${username} you made a great decision, and i just feel like i can trust you so im gonna let you in on a little project im working on"   `
-	);
-	let you_choose = prompt(`alright ${username} so let me know "yes" or "no" are you down to join me  `);
-	if (you_choose === `yes` ) {
-		console.log(
-			` "i knew i could trust you, ${username} , slinging crack is gonna be the best decision you have ever made"   `
-		);
-		slangingCrack();
-	} else if (you_choose === `no` ) {
-		console.log(
-			` "hah, thats fine lemme take you out on a fishing trip to celibrate our new friendship..... you did not go on a fishing trip but was instead kidnapped and driven to random road and taken care of, in an extremly inhumane way :(  "`);
-		
-	} else {
-		console.log(`hey ${username} didn't you hear us`);
-		goodChoice();
-	}
-}
-
-function slangingCrack() {
-	console.log(
-		` "alright ${username} you just got your first mission i need you drop some product off at this adress"   `
-	);
-	let you_choose = prompt(`alright ${username} when you get there the person buying is super sweaty and nervous looking, you suspect he might be wearing a wire do you "accuse him" of wearing a wire or just "finish up and leave"  `);
-	if (you_choose === `accuse him` ) {
-		console.log(
-			` " The guy wasnt an undercover cop and was so offended you thought so and finished you then and there"   `
-		);
-		
-	} else if (you_choose === `finish up and leave` ) {
-		console.log(
-			` "GET DOWN !!!!! ${username}, YOU ARE UNDER ARREST FOR SELLING SCHEDULE 1 NARCOTICS" you go to jail for 20 years and end up going clinically insane and spending the rest of your days in assisted living facility `);
-		
-	} else {
-		console.log(`hey ${username} didn't you hear us`);
-		goodChoice();
-	}
-}
-</pre>
-</div>
-</div>
+      <li>
+        <a href="https://climate-change-frontend.onrender.com/" class="project-link">Cli-Mate Change</a>
+		<p>This app uses real-time weather data to provide a three-day forecast for any location, and based on that information, it suggests what clothing and accessories you should pack for your trip. By taking the guesswork out of packing, it helps you be prepared for any weather conditions you may encounter on your journey.</p>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
